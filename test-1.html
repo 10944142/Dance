@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(199, 213, 233);
+        }
+       header{
+        width: 100%;
+        height: 100px;
+        background-color: #7494b6;
+        padding:0 100px;
+        z-index: 999;
+        position: relative;
+       }
+       .left{
+           float: left;
+       }
+       .right{
+           float: right;
+       }
+       img{
+            height: 95px;
+            width: 110px;
+            padding: 3px 1px 3px 3px;
+        }
+        h2{
+            float:right;
+            color: white;
+            line-height: 100px;
+            text-align: center;
+        }
+       ul>li{
+           float: left;
+           list-style:none;
+           width: 100px;
+           height: 100px;
+           line-height: 100px;
+           text-align: center;
+       }
+       ul>li:hover{
+           background-color: #b0c4de;
+           color:#000;
+           transition:0.5s ;
+       }
+       ul>li>ul>li{
+            background-color:#b0c4de;
+            clear: left;
+            list-style:none;
+            width: 100%;
+            z-index: 1000;
+            text-align: center;
+       }
+       ul>li:hover>ul>li:hover{
+           background-color: #7494b6;
+           color:black;
+           transition:0.5s ;
+        }
+        ul>li>a{
+            color:white;
+            text-decoration:none
+        }
+        ul>i>ul>li>a{
+            text-decoration:none
+        }
+        ul>li>ul{
+            visibility: hidden;
+        }
+        ul>li:hover>ul>li{
+            visibility: visible;
+        }
+       section{
+           width: 80%;
+           display: block;
+           height: calc(100vh - 100px);
+           background-color: #fff;
+           margin: auto;
+           z-index: 9;
+
+       }
+       /*
+       .allitem{
+           width: 95%;
+           height: 100%;
+           margin: auto;
+       }
+       .item{
+           width: 300px;
+           height: 400px;
+           float: left;
+           margin: 15px 10px;
+       }
+       .item img{
+           width: 100%;
+       }
+       .item p{
+           padding: 15px;
+       }
+       .allimg{
+           width: 300px;
+           height: 200px;
+           display: flex;
+           overflow: hidden;
+       }
+       .allimg img{
+           width: 100%;
+           height: 200px;
+           transform: translateX(-100px);
+           animation:move 20s infinite;
+       }
+       @keyframes move{
+        0%{
+            transform: translateX(0px);
+        }
+        50%{
+            transform: translateX(-600px);
+
+        }
+        100%{
+            transform: translateX(0px);
+
+        }
+       }*/
+       
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left">
+            <img src="assets/images/logo.png">
+            <h2>中原熱舞社－CYHD</h2>
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="home.html">首頁</a></li>
+                <li><a href="activity.html">活動介紹</a>
+                <ul>
+                    <li><a href="activity.html">社團博覽會</a></li>
+                    <li><a href="class.html">體驗課</a></li>
+                    <li><a href="perform.html">成果發表會</a></li>
+                    <li><a href="club.html">社員大會</a></li>
+                    <li><a href="practice.html">寒暑訓</a></li>
+                </ul>
+                </li>
+                <li> <a href="popping.html">舞風介紹</a>
+                <ul>
+                    <li><a href="popping.html">Popping</a></li>
+                    <li><a href="locking.html">Locking</a></li>
+                    <li><a href="hip-hop.html">Hip-Hop</a></li>
+                    <li><a href="girl's style.html">Girl's Style</a></li>
+                </ul>
+                </li>
+                <li> <a href="film.html">影片</a></li>
+                <li> <a href="about us.html">關於我們</a></li>
+                <li> <a href="form.html">表單</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div class="allitem">
+            <div class="item">
+                <img src="assets/images/H.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo fugiat, praesentium corporis ullam ipsum porro vero doloremque quia, ab dolore distinctio odit nulla. Reiciendis omnis, dolor ex libero repellendus ullam.</p>
+            </div>
+            <div class="item">
+                <img src="assets/images/H.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo fugiat, praesentium corporis ullam ipsum porro vero doloremque quia, ab dolore distinctio odit nulla. Reiciendis omnis, dolor ex libero repellendus ullam.</p>
+            </div>
+            <div class="item">
+                <img src="assets/images/H.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo fugiat, praesentium corporis ullam ipsum porro vero doloremque quia, ab dolore distinctio odit nulla. Reiciendis omnis, dolor ex libero repellendus ullam.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="allimg">
+            <img src="assets/images/H.jpg" alt="" class="img1">
+            <img src="assets/images/H.jpg" alt="">
+            <img src="assets/images/H.jpg" alt="">
+
+        </div>
+    </section>
+    
+</body>
+</html>
